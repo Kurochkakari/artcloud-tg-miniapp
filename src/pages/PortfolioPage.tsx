@@ -4,7 +4,7 @@ import './PortfolioPage.css';
 const projects = [
   {
     id: 1,
-    image: '/assets/5element__by.png',
+    image: './assets/5element__by.png',
     title: '5 Элемент',
     description: 'Интернет-магазин',
     details: 'Разработка сайта с нуля, поддержка, разработка нового функционала. Синхронизация с 1С, платежные шлюзы, программы лояльности.',
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: 2,
-    image: '/assets/megatop__by.png',
+    image: './assets/megatop__by.png',
     title: 'Megatop',
     description: 'Интернет-магазин',
     details: 'Создание интернет-магазина с собственной CMS на Laravel и VueJS.',
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: 3,
-    image: '/assets/hovanka.jpg',
+    image: './assets/hovanka.jpg',
     title: 'HOVANKA',
     description: 'Корпоративный сайт',
     details: 'Разработка сайта с нуля, создание темы WordPress.',
@@ -28,7 +28,7 @@ const projects = [
   },
   {
     id: 4,
-    image: '/assets/pradius.jpg',
+    image: './assets/pradius.jpg',
     title: 'Pradius Nova',
     description: 'Корпоративный сайт',
     details: 'Мультиязычная структура, система отзывов и рейтингов.',
@@ -36,7 +36,7 @@ const projects = [
   },
   {
     id: 5,
-    image: '/assets/gordorstroy_by.jpg',
+    image: './assets/gordorstroy_by.jpg',
     title: 'Гордорстрой',
     description: 'Корпоративный сайт',
     details: 'WordPress тема, мультиязычность, оптимизация SEO.',
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     id: 6,
-    image: '/assets/blk_by.jpg',
+    image: './assets/blk_by.jpg',
     title: 'БЛК Комплекс',
     description: 'Корпоративный сайт',
     details: 'Разработка сайта с нуля, поддержка.',
@@ -52,7 +52,7 @@ const projects = [
   },
   {
     id: 7,
-    image: '/assets/savtt-by.jpg',
+    image: './assets/savtt-by.jpg',
     title: 'СавТехноТранс',
     description: 'Корпоративный сайт',
     details: 'Разработка сайта с нуля, WordPress, поддержка.',
@@ -60,7 +60,7 @@ const projects = [
   },
   {
     id: 8,
-    image: '/assets/craftsman-site.jpg',
+    image: './assets/craftsman-site.jpg',
     title: 'CraftsMan',
     description: 'Площадка для ремесленников',
     details: 'Каталог товаров для ремесленников и самозанятых Беларуси.',
@@ -68,7 +68,7 @@ const projects = [
   },
   {
     id: 9,
-    image: '/assets/alfabank__by.png',
+    image: './assets/alfabank__by.png',
     title: 'Альфа Банк',
     description: 'Консалтинг',
     details: 'Консультационные услуги в сфере информационной безопасности.',
@@ -76,7 +76,7 @@ const projects = [
   },
   {
     id: 10,
-    image: '/assets/itreal.jpg',
+    image: './assets/itreal.jpg',
     title: 'ЮВЛЕН-ГРУПП',
     description: 'Интернет-магазин',
     details: 'WordPress, интеграция доставки и оплаты, парсинг товаров.',

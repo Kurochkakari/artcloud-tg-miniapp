@@ -4,7 +4,7 @@ import './ServicesPage.css';
 const services = [
   {
     id: 1,
-    icon: '/assets/computer_phone.svg',
+    icon: './assets/computer_phone.svg',
     title: 'Разработка программного обеспечения',
     description: 'Имея многолетний опыт работы в индустрии веб-разработки, наша компания поможет Вам в создании сайтов и мобильных приложений любой сложности.',
     features: [
@@ -17,7 +17,7 @@ const services = [
   },
   {
     id: 2,
-    icon: '/assets/desktop_arrow.svg',
+    icon: './assets/desktop_arrow.svg',
     title: 'Внедрение и сопровождение IT-систем',
     description: 'Предоставляем услуги по установке, настройке и сопровождению инфраструктурного программного обеспечения.',
     features: [
@@ -30,7 +30,7 @@ const services = [
   },
   {
     id: 3,
-    icon: '/assets/data-protection.svg',
+    icon: './assets/data-protection.svg',
     title: 'Информационная безопасность',
     description: 'Анализ рисков, тесты на проникновение, установка и настройка специализированного ПО, помощь в прохождении сертификации.',
     features: [
