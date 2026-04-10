@@ -19,7 +19,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('https://artcloud.by/wp-content/uploads/2021/04/bg_4.jpg') center center no-repeat;
+  background: url('/assets/bg_4.jpg') center center no-repeat;
   background-size: cover;
   z-index: -1;
 }
