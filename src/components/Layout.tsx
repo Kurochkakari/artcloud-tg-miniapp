@@ -24,7 +24,7 @@ export default function Layout() {
         <div className="header-content">
           <Link to="/" className="logo">
             <img 
-              src="/assets/logo__artcloud.png" 
+              src="./assets/logo__artcloud.png" 
               alt="ArtCloud" 
             />
           </Link>
@@ -68,7 +68,7 @@ export default function Layout() {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-logo">
-            <img src="/assets/logo__artcloud.png" alt="ArtCloud" />
+            <img src="./assets/logo__artcloud.png" alt="ArtCloud" />
             <p>Искусство программировать</p>
           </div>
           
