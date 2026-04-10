@@ -27,14 +27,12 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
-        working-directory: ./tg-miniapp
       - name: Build
         run: npm run build
-        working-directory: ./tg-miniapp
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./tg-miniapp/dist
+          path: ./dist
 
   deploy:
     environment:
