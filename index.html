@@ -8,22 +8,23 @@
     <title>ArtCloud - Telegram MiniApp</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
-      html, body { 
-        background: #ffffff !important; 
+      html { 
         scrollbar-width: thin;
-        scrollbar-color: #06b6d4 #f1f5f9 !important;
+        scrollbar-color: #06b6d4 #cbd5e1;
       }
       ::-webkit-scrollbar { 
-        width: 10px !important; 
-        background: #f1f5f9 !important;
+        width: 8px; 
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track { 
+        background: #cbd5e1;
       }
       ::-webkit-scrollbar-thumb { 
-        background: #06b6d4 !important; 
-        border-radius: 5px !important;
-        -webkit-appearance: none !important;
+        background: #06b6d4; 
+        border-radius: 4px;
       }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #0891b2 !important;
+      ::-webkit-scrollbar-thumb:active { 
+        background: #0891b2; 
       }
     </style>
   </head>
