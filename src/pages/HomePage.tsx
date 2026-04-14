@@ -27,9 +27,9 @@ export default function HomePage() {
               Наши работы
             </Link>
           </div>
-          <div className="hero-showcase">
-            <img src="./assets/5element__by.png" alt="Проекты" />
-          </div>
+        </div>
+        <div className="hero-right-image">
+          <img src="./assets/computer_phone.svg" alt="Разработка" />
         </div>
       </section>
 

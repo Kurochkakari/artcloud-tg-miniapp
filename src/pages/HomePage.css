@@ -8,8 +8,7 @@
   min-height: calc(100vh - 64px);
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 48px 16px;
+  padding: 100px 16px 80px;
   overflow: hidden;
 }
 
@@ -36,10 +35,29 @@
 
 .hero-content {
   position: relative;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
-  max-width: 800px;
+  max-width: 600px;
   animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-right-image {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  width: 40%;
+  max-width: 350px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.hero-right-image img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 .hero-content h1 {
@@ -67,7 +85,6 @@
 
 .hero-buttons {
   display: flex;
-  flex-direction: column;
   gap: 16px;
 }
 
