@@ -43,19 +43,6 @@ function App() {
         background: #06b6d4 !important;
       }
       
-      /* Текст на главной - черный */
-      .hero-content h1,
-      .hero-content .company-name,
-      .hero-content p,
-      .hero-content .btn {
-        color: #1e293b !important;
-        text-shadow: none !important;
-      }
-      
-      .hero-content .company-name {
-        color: #06b6d4 !important;
-      }
-      
       /* Только изображение в портфолио - голубое свечение при наведении */
       .portfolio-image {
         position: relative;

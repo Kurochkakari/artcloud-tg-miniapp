@@ -25,14 +25,20 @@
 }
 
 .hero-bg::after {
-  display: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
   text-align: left;
-  color: #1e293b;
+  color: #ffffff;
   max-width: 600px;
   animation: fadeInUp 0.8s ease forwards;
 }
@@ -48,7 +54,6 @@
   font-weight: 700;
   margin-bottom: 16px;
   line-height: 1.2;
-  color: #1e293b !important;
 }
 
 .company-name {
