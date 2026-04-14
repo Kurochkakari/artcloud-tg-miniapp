@@ -11,7 +11,7 @@ html, body, #root {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  background: #ffffff;
+  background: red;
   color: #334155;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -41,15 +41,15 @@ input, textarea {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px !important;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #f1f5f9 !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #06b6d4;
-  border-radius: 3px;
+  background: #06b6d4 !important;
+  border-radius: 4px !important;
 }
 /* cache bust Tue Apr 14 08:21:31 PM +03 2026 */
