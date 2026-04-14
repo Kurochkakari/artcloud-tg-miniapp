@@ -27,18 +27,6 @@ export default function HomePage() {
               Наши работы
             </Link>
           </div>
-          <div className="hero-graphic">
-            <svg viewBox="0 0 400 300" className="hero-svg">
-              <rect x="50" y="100" width="300" height="180" rx="10" fill="#1e293b"/>
-              <rect x="70" y="120" width="260" height="140" rx="5" fill="#334155"/>
-              <rect x="80" y="130" width="80" height="60" rx="3" fill="#06b6d4"/>
-              <rect x="170" y="130" width="140" height="8" rx="2" fill="#64748b"/>
-              <rect x="170" y="150" width="100" height="6" rx="2" fill="#64748b"/>
-              <rect x="170" y="170" width="120" height="6" rx="2" fill="#64748b"/>
-              <circle cx="200" cy="220" r="20" fill="#06b6d4"/>
-              <path d="M190 220 L197 227 L213 211" stroke="#fff" strokeWidth="3" fill="none"/>
-            </svg>
-          </div>
         </div>
       </section>
 
