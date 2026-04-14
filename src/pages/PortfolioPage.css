@@ -74,6 +74,12 @@
 
 .portfolio-card:hover .portfolio-image img {
   transform: scale(1.05);
+  animation: imageGlow 1s ease-in-out infinite alternate;
+}
+
+@keyframes imageGlow {
+  from { filter: brightness(1) drop-shadow(0 0 0 transparent); }
+  to { filter: brightness(1.1) drop-shadow(0 0 20px #06b6d4); }
 }
 
 .portfolio-overlay {
