@@ -28,7 +28,6 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        <div className="hero-background-img"></div>
       </section>
 
       <section className="quick-links">
