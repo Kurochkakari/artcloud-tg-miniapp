@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './Layout.css';
 
 const navItems = [
@@ -14,22 +14,11 @@ const navItems = [
 
 export default function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-
-  const isHome = location.pathname === '/';
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <div className="app-container">
-      <header className={`header ${isHome && !scrolled ? 'header-transparent' : ''} ${scrolled ? 'header-scrolled' : ''}`}>
+      <header className="header">
         <div className="header-content">
           <Link to="/" className="logo">
             <img 
