@@ -41,18 +41,13 @@
 
 .portfolio-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 0 20px #06b6d4, 0 0 40px #06b6d4 !important;
-  animation: glow 1s ease-in-out infinite alternate;
+  box-shadow: 0 0 30px #06b6d4, 0 0 60px #06b6d4;
+  animation: glowPulse 1.5s ease-in-out infinite;
 }
 
-@keyframes glow {
-  from { box-shadow: 0 0 20px #06b6d4, 0 0 30px #06b6d4; }
-  to { box-shadow: 0 0 30px #06b6d4, 0 0 50px #06b6d4; }
-}
-
-@keyframes glow {
-  from { box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3); }
-  to { box-shadow: 0 8px 40px rgba(6, 182, 212, 0.7); }
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px #06b6d4, 0 0 40px #06b6d4; }
+  50% { box-shadow: 0 0 40px #06b6d4, 0 0 80px #06b6d4; }
 }
 
 .portfolio-image {
@@ -65,21 +60,18 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.portfolio-card:hover .portfolio-image {
-  box-shadow: inset 0 0 0 4px #06b6d4;
+  transition: all 0.3s ease;
 }
 
 .portfolio-card:hover .portfolio-image img {
   transform: scale(1.05);
-  animation: imageGlow 1s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 15px #06b6d4);
+  animation: imageShine 2s ease-in-out infinite;
 }
 
-@keyframes imageGlow {
-  from { filter: brightness(1) drop-shadow(0 0 0 transparent); }
-  to { filter: brightness(1.1) drop-shadow(0 0 20px #06b6d4); }
+@keyframes imageShine {
+  0%, 100% { filter: brightness(1) drop-shadow(0 0 10px #06b6d4); }
+  50% { filter: brightness(1.1) drop-shadow(0 0 25px #06b6d4); }
 }
 
 .portfolio-overlay {
