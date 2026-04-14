@@ -43,16 +43,21 @@ function App() {
         background: #06b6d4 !important;
       }
       
-      /* Анимация переливания на карточках портфолио */
+      /* Только при наведении на конкретную карточку - эффект переливания */
+      .portfolio-card {
+        position: relative;
+        overflow: hidden;
+      }
+      
       .portfolio-card::before {
         content: '';
         position: absolute;
         top: 0;
         left: -100%;
-        width: 100%;
+        width: 50%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.4), transparent);
-        transition: left 0.5s ease;
+        background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.5), transparent);
+        transition: left 0.6s ease;
         z-index: 2;
         pointer-events: none;
       }
@@ -62,17 +67,25 @@ function App() {
       }
       
       .portfolio-card:hover .portfolio-image img {
-        animation: imageShine 2s ease-in-out infinite;
-        transform: scale(1.08);
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 15px rgba(6, 182, 212, 0.8));
       }
       
-      @keyframes imageShine {
-        0%, 100% {
-          filter: drop-shadow(0 0 5px #06b6d4) brightness(1);
-        }
-        50% {
-          filter: drop-shadow(0 0 20px #06b6d4) brightness(1.1);
-        }
+      /* Текст на карточках портфолио - выровнять слева */
+      .portfolio-info {
+        padding: 16px;
+        text-align: left !important;
+      }
+      
+      .portfolio-info h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+        color: #1e293b;
+      }
+      
+      .portfolio-info p {
+        font-size: 14px;
+        color: #64748b;
       }
     `;
     document.head.appendChild(style);
