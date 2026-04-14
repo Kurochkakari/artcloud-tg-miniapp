@@ -41,19 +41,23 @@ input, textarea {
 }
 
 ::-webkit-scrollbar {
-  width: 8px !important;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9 !important;
+  background: #94a3b8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #06b6d4 !important;
-  border-radius: 4px !important;
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: #0891b2 !important;
+  background: #06b6d4;
 }
 /* cache bust Tue Apr 14 08:21:31 PM +03 2026 */
