@@ -19,7 +19,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('./assets/bg_4.jpg') center center no-repeat;
+  background-image: url('./assets/bg_4.jpg'), url('./assets/computer_phone.svg');
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
 }
