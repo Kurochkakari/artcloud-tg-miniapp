@@ -43,49 +43,38 @@ function App() {
         background: #06b6d4 !important;
       }
       
-      /* Только при наведении на конкретную карточку - эффект переливания */
-      .portfolio-card {
+      /* Текст на главной - черный */
+      .hero-content h1,
+      .hero-content .company-name,
+      .hero-content p,
+      .hero-content .btn {
+        color: #1e293b !important;
+        text-shadow: none !important;
+      }
+      
+      .hero-content .company-name {
+        color: #06b6d4 !important;
+      }
+      
+      /* Только изображение в портфолио - голубое свечение при наведении */
+      .portfolio-image {
         position: relative;
         overflow: hidden;
+        border-radius: 12px;
       }
       
-      .portfolio-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 50%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.5), transparent);
-        transition: left 0.6s ease;
-        z-index: 2;
-        pointer-events: none;
-      }
-      
-      .portfolio-card:hover::before {
-        left: 100%;
+      .portfolio-image img {
+        transition: all 0.4s ease;
       }
       
       .portfolio-card:hover .portfolio-image img {
         transform: scale(1.05);
-        filter: drop-shadow(0 0 15px rgba(6, 182, 212, 0.8));
+        filter: drop-shadow(0 0 20px rgba(6, 182, 212, 0.8));
       }
       
-      /* Текст на карточках портфолио - выровнять слева */
       .portfolio-info {
         padding: 16px;
-        text-align: left !important;
-      }
-      
-      .portfolio-info h3 {
-        font-size: 18px;
-        margin-bottom: 8px;
-        color: #1e293b;
-      }
-      
-      .portfolio-info p {
-        font-size: 14px;
-        color: #64748b;
+        text-align: left;
       }
     `;
     document.head.appendChild(style);
