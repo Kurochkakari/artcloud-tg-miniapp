@@ -52,4 +52,8 @@ input, textarea {
   background: #06b6d4 !important;
   border-radius: 4px !important;
 }
+
+::-webkit-scrollbar-thumb:active {
+  background: #0891b2 !important;
+}
 /* cache bust Tue Apr 14 08:21:31 PM +03 2026 */

@@ -8,7 +8,8 @@
   min-height: calc(100vh - 64px);
   display: flex;
   align-items: center;
-  padding: 100px 16px 80px;
+  justify-content: center;
+  padding: 48px 16px;
   overflow: hidden;
 }
 
@@ -35,10 +36,18 @@
 
 .hero-content {
   position: relative;
-  text-align: left;
+  text-align: center;
   color: #ffffff;
-  max-width: 600px;
+  max-width: 800px;
+  margin: 0 auto;
   animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .hero-right-image {
