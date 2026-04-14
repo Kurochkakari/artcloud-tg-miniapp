@@ -28,6 +28,9 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
+        <div className="hero-image">
+          <img src="./assets/computer_phone.svg" alt="Разработка" />
+        </div>
       </section>
 
       <section className="quick-links">

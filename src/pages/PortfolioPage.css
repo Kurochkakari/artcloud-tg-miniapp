@@ -42,6 +42,12 @@
 .portfolio-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 20px #06b6d4, 0 0 40px #06b6d4 !important;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px #06b6d4, 0 0 30px #06b6d4; }
+  to { box-shadow: 0 0 30px #06b6d4, 0 0 50px #06b6d4; }
 }
 
 @keyframes glow {
