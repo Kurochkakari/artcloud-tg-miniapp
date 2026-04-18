@@ -57,6 +57,53 @@
   border-radius: 12px;
 }
 
+.portfolio-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 30%,
+    rgba(6, 182, 212, 0.5) 45%,
+    rgba(34, 211, 238, 0.7) 50%,
+    rgba(6, 182, 212, 0.5) 55%,
+    transparent 70%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio-card:hover .portfolio-image::before {
+  animation: shimmerWave 2.5s ease-in-out infinite;
+}
+
+@keyframes shimmerWave {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  45% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
 .portfolio-image img {
   width: 100%;
   height: 100%;
